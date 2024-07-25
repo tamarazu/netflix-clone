@@ -4,6 +4,7 @@ import {
   PlusCircleIcon,
   ServerIcon,
 } from "@heroicons/react/24/solid";
+import profiles from "@/public/profiles.json"; // This import style requires "esModuleInterop", see "side notes"
 
 export default function Home() {
   return (
@@ -36,53 +37,20 @@ export default function Home() {
         </div>
 
         <div className="w-1/2 m-auto grid grid-cols-2 gap-8">
-          <div className="w-fit text-center font-semibold text-white">
-            <Image
-              src="/rectangle-1.svg"
-              alt="user-1"
-              className="dark:invert"
-              width={100}
-              height={92}
-              priority
-            />
-            <p className="leading-10">Tamara</p>
-          </div>
 
-          <div className="w-fit text-center font-semibold text-white">
-            <Image
-              src="/rectangle-1.svg"
-              alt="user-1"
-              className="dark:invert"
-              width={100}
-              height={92}
-              priority
-            />
-            <p className="leading-10">Tamara</p>
-          </div>
-
-          <div className="w-fit text-center font-semibold text-white">
-            <Image
-              src="/rectangle-1.svg"
-              alt="user-1"
-              className="dark:invert"
-              width={100}
-              height={92}
-              priority
-            />
-            <p className="leading-10">Tamara</p>
-          </div>
-
-          <div className="w-fit text-center font-semibold text-white">
-            <Image
-              src="/rectangle-1.svg"
-              alt="user-1"
-              className="dark:invert"
-              width={100}
-              height={92}
-              priority
-            />
-            <p className="leading-10">Tamara</p>
-          </div>
+          {profiles.map((profile, i) => (
+            <div className="w-fit text-center font-semibold text-white">
+              <Image
+                src={`/rectangle-${profile.color}.svg`}
+                alt="user-1"
+                className="dark:invert"
+                width={100}
+                height={92}
+                priority
+              />
+              <p className="leading-10 capitalize">{profile.name}</p>
+            </div>
+          ))}
 
           <div className="flex flex-col items-center text-center font-semibold text-white">
             <PlusCircleIcon width={50} height={50} />
