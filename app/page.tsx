@@ -1,5 +1,9 @@
 import Image from "next/image";
-import { PencilIcon, PlusCircleIcon, ServerIcon } from "@heroicons/react/24/solid";
+import {
+  PencilIcon,
+  PlusCircleIcon,
+  ServerIcon,
+} from "@heroicons/react/24/solid";
 
 export default function Home() {
   return (
@@ -17,8 +21,8 @@ export default function Home() {
       </div> */}
 
       {/* ==== choose user ==== */}
-      <div className="min-h-screen grid cols-1 gap-20 justify-center py-8">
-        <div className="w-full flex items-center justify-between px-4">
+      <div className="min-h-screen w-full justify-center py-8">
+        <div className="w-full  mb-20 flex items-center justify-between px-4">
           <PencilIcon color="transparent" width={24} height={24} />
           <Image
             src="/logos_netflix.svg"
@@ -31,7 +35,7 @@ export default function Home() {
           <PencilIcon color="white" width={24} height={24} />
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="w-1/2 m-auto grid grid-cols-2 gap-8">
           <div className="w-fit text-center font-semibold text-white">
             <Image
               src="/rectangle-1.svg"
@@ -85,7 +89,6 @@ export default function Home() {
             <p>Add Profile</p>
           </div>
         </div>
-
 
         <span></span>
       </div>
