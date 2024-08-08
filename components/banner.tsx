@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { PlusIcon, PlayIcon } from "@heroicons/react/24/solid";
+import { InformationCircleIcon } from "@heroicons/react/24/outline";
 
 type Props = {};
 
 export default function Banner({}: Props) {
   return (
-    <div className="bg-white relative">
+    <div className="relative">
       <Image
         src="/banner.png"
         alt="Netflix Logo"
@@ -31,14 +33,27 @@ export default function Banner({}: Props) {
           <p>My List</p>
         </div>
       </div>
-      <div className="absolute w-full bottom-1 text-white flex justify-center font-bold text-center">
-        <div className="flex flex-col justify-center w-[24px] h-[24px] border">
-          <p className="text-[5px] leading-[7px]">TOP</p>
-          <p className="text-[7px] leading-[10px]">10</p>
+      <div className="absolute w-full bottom-14 text-white flex justify-center font-bold text-center">
+        <div className="flex flex-col m-0 justify-center w-[18px] h-[19px] border">
+          <p className="text-[5px] leading-[5px]">TOP</p>
+          <p className="text-[7px] leading-[8px]">10</p>
         </div>
-        <p className="ml-2">#2 in Indonesia Today</p>
+        <p className="ml-2 text-sm">#2 in Indonesia Today</p>
+      </div>
+      <div className="w-full bg-black text-center py-2 flex gap-x-6 justify-center text-white text-xs">
+        <div className="flex flex-col items-center">
+          <PlusIcon width={16} height={16} />
+          <p>My List</p>
+        </div>
+        <button className="flex py-1.5 px-3 gap-1 rounded items-center bg-gray-300 text-black text-base font-semibold">
+          <PlayIcon width={16} height={16} />
+          <p>Play</p>
+        </button>
+        <div className="flex flex-col items-center">
+          <InformationCircleIcon width={16} height={16} />
+          <p>info</p>
+        </div>
       </div>
     </div>
-
   );
 }
