@@ -37,7 +37,6 @@ export default function Home() {
         </div>
 
         <div className="w-1/2 m-auto grid grid-cols-2 gap-8">
-
           {profiles.map((profile, i) => (
             <div className="w-fit text-center font-semibold text-white">
               <Image
