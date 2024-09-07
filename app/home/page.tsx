@@ -13,18 +13,16 @@ export default function Page({}: Props) {
     "Top 10 in Indonesia",
     "My List",
     "Korean Dramas",
-    "Indonesian Movies"
-  ]
+    "Indonesian Movies",
+  ];
   return (
-    <div className="bg-black text-white relative min-h-screen w-full">
-      <Banner/>
-      <Previews/>
-      <ContiueWatch/>
-      {
-        recommendationTitles.map((name, index) => (
-          <Recommendation name={name}/>
-        ))
-      }
+    <div className="bg-black font-bold text-xl text-white relative min-h-screen w-full">
+      <Banner />
+      <Previews />
+      <ContiueWatch />
+      {recommendationTitles.map((name, index) => (
+        <Recommendation name={name} key={index} />
+      ))}
     </div>
   );
 }

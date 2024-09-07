@@ -27,20 +27,20 @@ export default function Banner({}: Props) {
           height={57}
           priority
         />
-        <div className="w-full text-white font-semibold flex justify-around items-center px-4">
+        <div className="w-full font-semibold flex justify-around items-center px-4">
           <p>Tv Shows</p>
           <p>Movies</p>
           <p>My List</p>
         </div>
       </div>
-      <div className="absolute w-full bottom-14 text-white flex justify-center font-bold text-center">
+      <div className="absolute w-full bottom-14 flex justify-center font-bold text-center">
         <div className="flex flex-col m-0 justify-center w-[18px] h-[19px] border">
           <p className="text-[5px] leading-[5px]">TOP</p>
           <p className="text-[7px] leading-[8px]">10</p>
         </div>
         <p className="ml-2 text-sm">#2 in Indonesia Today</p>
       </div>
-      <div className="w-full bg-black text-center py-2 flex gap-x-6 justify-center text-white text-xs">
+      <div className="w-full bg-black text-center py-2 flex gap-x-6 justify-center text-xs">
         <div className="flex flex-col items-center">
           <PlusIcon width={16} height={16} />
           <p>My List</p>

@@ -1,13 +1,12 @@
 import React from "react";
 import Image from "next/image";
-// import ImageLink
 type Props = {};
 
 export default function Previews({}: Props) {
   const array = ["", "", "", "", ""];
   return (
-    <div className="font-bold w-screen overflow-hidden">
-      <h2 className="px-4 pb-4 text-xl">Previews</h2>
+    <div className="w-screen overflow-hidden">
+      <h2 className="p-4">Previews</h2>
       <div className="w-screen overflow-scroll px-4">
         <div className="inline-flex gap-3">
           {array.map((data, i) => (

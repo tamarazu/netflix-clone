@@ -8,7 +8,7 @@ type Props = {
 export default function Recommendation({ name }: Props) {
   const array = ["", "", "", "", "", ""];
   return (
-    <div className="font-bold text-xl">
+    <div>
       <h2 className="px-4">{name}</h2>
       <div className="w-screen overflow-scroll px-4">
         <div className="inline-flex gap-3 py-4">

@@ -9,7 +9,7 @@ export default function ContiueWatch({}: Props) {
   const array = ["", "", "", "", ""];
   return (
     <div>
-      <h2 className="px-4 text-xl font-bold ">Continue Watching for Enola</h2>
+      <h2 className="px-4">Continue Watching for Enola</h2>
       <div className="w-screen overflow-scroll p-4">
         <div className="inline-flex gap-3">
           {array.map((data, i) => (
